@@ -239,7 +239,7 @@ class Controller extends CController {
             $headers .= "Reply-To: " . $email['From'] . "\r\n";
 
             $mailer->AddAddress($email['To']);
-       
+
             $mailer->addCustomHeader($headers);
 
             $mailer->From = $email['From'];
@@ -251,10 +251,7 @@ class Controller extends CController {
 
             $mailer->Send();
             $mailer->ClearAddresses();
-           $mailer->ClearCustomHeaders();
-            
-            CVarDumper::dump($mailer,10,true);
-            die;
+            $mailer->ClearCustomHeaders();
         }
         return true;
     }
