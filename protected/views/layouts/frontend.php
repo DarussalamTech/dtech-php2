@@ -27,6 +27,11 @@
                 $(".design").colorbox({inline: true, width: "50%", scrolling: true, height: "500px"});
                 $(".brand").colorbox({inline: true, width: "50%", scrolling: true, height: "500px"});
 
+                $(".social_media_images div a img").hover(function() {
+                    $(this).attr("src", $(this).attr("hover"));
+                }, function() {
+                    $(this).attr("src", $(this).attr("un-hover"));
+                });
 
             })
         </script>
@@ -62,9 +67,9 @@
                         <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/right_arrow_03.png" /></a>
                     </div>
                     <div class="social_media">
-                        <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_tweeter_03.jpg" /></a>
-                        <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_facebook_03.jpg" /></a>
-                        <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_linkedin_03.jpg" /></a>
+                        <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_tweeter_03.png" /></a>
+                        <a href="http://facebook.com/dtech.co"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_facebook_03.png" /></a>
+                        <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_linkedin_03.png" /></a>
                     </div>
                 </div>
                 <div class="dots">
@@ -74,6 +79,9 @@
         </div>
         <div id="main_about_us">
             <div id="about_us">
+                <div class="back_to_up">
+                    <a href="javascript:void(0)" onclick="dtech.scrolltoTopOfPage()"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/back_to_up_03.jpg" /></a>
+                </div>
                 <div class="about_us_content">
                     <h1>about<span>us</span></h1>
                     <p>Twenty-first century is a century of technical advancements. D-tech uses cutting edge technology and ongoing training and development to stay up to date with technology and the market trends. We believe in novelty, and innovation. Our approach is unorthodox and that is what gives us our competitive edge. Providing free consultation and one-week trial are some of the options that we offer to our worthy clients so that they are fully satisfied. It’s a “been there, done that” scenario. We know how it works. Let us take all your worries. You sit back and relax. More significantly, we say we are done only when we are satisfied with our work. We guarantee quality results.</p>

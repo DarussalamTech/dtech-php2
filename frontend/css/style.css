@@ -203,19 +203,19 @@ a img { border:none; }
 
 .tweet_hover { float:left; }
 
-.tweet_hover a img:hover { background:url(../images/tweeter_hover_img_03.jpg) no-repeat; }
+
 
 .facebook_hover { float:left; }
 
-.facebook_hover a img:hover { background:url(../images/facebook_hover_img_03.jpg) no-repeat; }
+
 
 .google_hover { float:left; }
 
-.google_hover a img:hover { background:url(../images/google_hover_img_03.jpg) no-repeat; }
+
 
 .linkedin_hover { float:left; }
 
-.linkedin_hover a img:hover { background:url(../images/linkedin_hover_img_03.jpg) no-repeat; }
+
 
 .back_to_up { float:left; position:absolute; right:210px; }
 
