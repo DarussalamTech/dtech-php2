@@ -61,3 +61,13 @@ div.errorMessage {
 .cirlce_data section img.left_arrow,.cirlce_data section img.right_arrow{
     cursor: pointer;
 }
+.cirlce_data {
+    overflow: auto;
+}
+.cross_img img {
+    margin: 0;
+}
+#cirlce_part_scroller {
+    height: 500px;
+    width: 500px;
+}

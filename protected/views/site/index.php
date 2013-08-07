@@ -72,16 +72,16 @@ if($model->hasErrors()){
         <p>I am currently accepting work inquiries. Fill out the form and I will get back to you as soon as I can. In the meantime, bother me on various social networks.</p>
         <div class="social_media_images">
             <div class="tweet_hover">
-                <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/tweeter_img_03.png" /></a>
+                <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/tweeter_img_03.png" /></a>
             </div>
             <div class="facebook_hover">
-                <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/facebook_big_img_03.png" /></a>
+                <a href="https://www.facebook.com/dtech.co" target="_blank"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/facebook_big_img_03.png" /></a>
             </div>
             <div class="google_hover">
-                <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/google_img_03.png" /></a>
+                <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/google_img_03.png" /></a>
             </div>
             <div class="linkedin_hover">
-                <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/footer_linked_in_03.jpg" /></a>
+                <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/footer_linked_in_03.jpg" /></a>
             </div>
         </div>
     </div>

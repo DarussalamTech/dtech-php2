@@ -103,79 +103,60 @@ a img { border:none; }
 
 .services_img { padding: 0; margin: 60px 0 0 0; }
 
+.services_img section { text-align:left; font-family: MyraidPro Bold; line-height:64.92px; font-size:30px; padding: 0 0 0 30px; margin: 0; color:#ffb619; }
+
+.services_img p.section_heading {font-family: MyraidPro Bold; line-height:64.92px; font-size:30px;margin: 0; color:#ffb619;text-align: left;margin-left: 10px;}
+.services_img p {color: #000000; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
+
 .cirlce { height:200px; width:200px; border-radius:100px; background:#FFF; float:left; margin: 30px 0 0 40px; padding: 0; }
 
 .cirlce a { padding: 0; margin: 30px 0 0 0; }
 
 .cirlce a img { margin-right:auto; margin-left:auto; display:block; margin-top:50px; }
 
-.cirlce_part { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-480px; margin-left:165px; text-align:center; display:none; }
+.cirlce_part { background:#FFF; position:absolute; width:587px; height:500px; padding: 0; margin: 0; float:left;  text-align:center; overflow:auto; }
 
 .cirlce_part img { padding: 0; margin: 70px 0 0 0; }
 
 .cirlce_part h4 { font-size:172.11px; line-height:123.92px; color:#000; font-family: MyraidPro Bold; padding: 0; margin: 0; }
 
-.cirlce_part section { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0; margin: 0 0 0 50px; color:#ffb619; }
-
-.cirlce_part section span { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
-
 .cirlce_part .left_arrow { padding: 0; margin: 48px 0 0 0; float:left; }
 
 .cirlce_part .right_arrow { padding: 0; margin: 46px 0 0 0; float:left; }
 
-.cirlce_part p { padding: 0 120px; margin: 0 0 0 30px; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
-
-.pad_cirlce_part { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-480px; margin-left:-73px; text-align:center; }
+.pad_cirlce_part { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-480px; margin-left:-73px; text-align:center; display:none; overflow:scroll; }
 
 .pad_cirlce_part img { padding: 0; margin: 70px 0 0 0; }
 
 .pad_cirlce_part h4 { font-size:172.11px; line-height:123.92px; color:#000; font-family: MyraidPro Bold; padding: 0; margin: 0; }
 
-.pad_cirlce_part section { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0; margin: 0; color:#ffb619; }
-
-.pad_cirlce_part section span { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
-
 .pad_cirlce_part .left_arrow { padding: 0; margin: 48px 0 0 0; float:left; }
 
 .pad_cirlce_part .right_arrow { padding: 0; margin: 46px 0 0 0; float:left; }
 
-.pad_cirlce_part p { padding: 0 120px; margin: 0 0 0 30px; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
-
-.brush_cirlce_part { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-460px; margin-left:-313px; text-align:center; display:none; }
+.brush_cirlce_part { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-460px; margin-left:-313px; text-align:center; display:none; overflow:scroll; }
 
 .brush_cirlce_part img { padding: 0; margin: 70px 0 0 0; }
 
 .brush_cirlce_part h4 { font-size:172.11px; line-height:123.92px; color:#000; font-family: MyraidPro Bold; padding: 0; margin: 0; }
 
-.brush_cirlce_part section { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0; margin: 0; color:#ffb619; }
-
-.brush_cirlce_part section span { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
-
 .brush_cirlce_part .left_arrow { padding: 0; margin: 48px 0 0 0; float:left; }
 
 .brush_cirlce_part .right_arrow { padding: 0; margin: 46px 0 0 0; float:left; }
 
-.brush_cirlce_part p { padding: 0 120px; margin: 0 0 0 30px; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
-
-.comments_cirlce_part  { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-470px; margin-left:-553px; text-align:center; display:none; }
+.comments_cirlce_part  { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-470px; margin-left:-553px; text-align:center; display:none; overflow:scroll; }
 
 .comments_cirlce_part img { padding: 0; margin: 70px 0 0 0; }
 
 .comments_cirlce_part h4 { font-size:172.11px; line-height:123.92px; color:#000; font-family: MyraidPro Bold; padding: 0; margin: 0; }
 
-.comments_cirlce_part section {font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
-
-.comments_cirlce_part section span { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
-
 .comments_cirlce_part .left_arrow { padding: 0; margin: 48px 0 0 0; float:left; }
 
 .comments_cirlce_part .right_arrow { padding: 0; margin: 46px 0 0 0; float:left; }
 
-.comments_cirlce_part p { padding: 0 120px; margin: 0 0 0 30px; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
+.cross_img { position:absolute; padding: 0;top:0;right: 0; }
 
-.cross_img { position:absolute; padding: 0; margin: -55px 0 0 570px; float:right; }
-
-.cross_img a img { width:30px; height:30px; }
+.cross_img img { width:30px; height:30px; }
 
 #contact_us { height:647px; background:url(../images/contactus_bg.jpg) no-repeat #f1bd25; background-size:cover; }
 
@@ -246,3 +227,17 @@ a img { border:none; }
 
 .games_arrow { padding: 0; margin: 10px 0 0px 0; top:40px; float:left; }
 a { outline:none; }
+
+/* About Us */
+
+#main_about_us { height:692px; background:url(../images/about_us_bg_02.jpg) no-repeat #9ec84d; background-size:cover; padding: 0; margin: 0; }
+
+#about_us { padding: 0; margin: 0 auto; width:960px; }
+
+.about_us_content { width:656px; padding: 0; margin: 0; }
+
+.about_us_content h1 { font-family: MyraidPro Regular; color:#FFF; font-size:154px; padding: 0; margin: 0; font-weight:normal; }
+
+.about_us_content h1 span { font-family: MyraidPro Semibold; color:#000; font-size:100px; }
+
+.about_us_content p { font-size:17px; color:#000; font-family: MyraidPro Italic; }
