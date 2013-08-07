@@ -105,3 +105,11 @@ if ($model->hasErrors()) {
 
 </div>
 <?php $this->endWidget(); ?>
+
+<?php
+if (!$model->hasErrors()) {
+    Yii::app()->clientScript->registerScript('capcha', '
+            jQuery("#captcha a#yw0_button").trigger("click");
+    ');
+}
+?>
