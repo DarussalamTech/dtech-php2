@@ -8,14 +8,13 @@
  */
 $params = array(
     // this is used in contact page
-    'adminEmail' => 'ali.abbas@darussalmpk.com', //Should be same component->email->user, use for sending emails to customer (sign up conformation, sending activation link, sending new password)
+    'adminEmail' => 'ali.abbas@darussalampk.com', //Should be same component->email->user, use for sending emails to customer (sign up conformation, sending activation link, sending new password)
     'replyTo' => 'admin@csv.com',
     'cc' => 'admin@csv.com',
     'bcc' => 'admin@csv.com',
     'supportEmail' => 'admin@csv.com', //receiveing customer emails
     'dateformat' => 'y/m/d1',
- 
-    'adminEmail' => 'no_reply@csv.com',
+
     'default_admin' => 'webmaster@csv.com',
     'dateformat' => 'm/d/y',
     'mailHost' => 'smtp.gmail.com',
