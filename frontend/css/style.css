@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body { padding: 0; margin: 0; }
+
+a { outline:none; overflow:hidden; }
+
+a img { border:none; }
+
+@font-face { font-family: Halvetica New; src:url(../fonts/helvetica-neue-condensed.otf/helvetica-neue-condensed.otf); }
+
+@font-face { font-family:Halvetic New eot; src:url(../fonts/helvetica-neue-condensed.otf/helvetica-neue-condensed.eot); }
+
+@font-face { font-family: MyraidPro Semibold; src:url(../fonts/MYRIADPRO-SEMIBOLD.OTF), url(../fonts/MYRIADPRO-SEMIBOLD.eot); }
+
+@font-face { font-family: MyraidPro Italic; src:url(../fonts/MYRIADPRO-IT.OTF); }
+
+@font-face { font-family: MyraidPro Bold; src:url(../fonts/MYRIADPRO-BOLD.OTF); }
+
+@font-face { font-family: MyraidPro Regular; src:url(../fonts/MYRIADPRO-REGULAR.OTF); }
+
+@font-face { font-family: Ball; src:url(../fonts/BALLW__.TTF); }
+
+#banner { height:577px; background:url(../images/map_bg.jpg) no-repeat #f1bd25; background-size:cover; border-bottom:1px solid #FFF; }
+
+.banner_part { padding: 0; margin: 0 auto; width:960px; }
+
+.logo { width:100%; padding: 0; margin: 0; float:left; }
+
+.nav { width:100%; text-align:center; padding: 0; margin: 0; float:left; }
+
+.nav ul { background:#000; height:30px; width:450px; padding: 0 0 0 20px; margin: 20px 0 0 250px; }
+
+.nav ul li { list-style:none; display:inline; float:left; padding: 0; margin: 5px 0 0 0; }
+
+.nav ul li a { color:#FFF; text-decoration:none; margin: 5px 0 0 0; padding: 0 10px; font-family: Halvetica New; }
+
+.main_banner { width:100%; float:left; padding: 0; margin: 80px 0 0 0; }
+
+.left_banner { width:15%; padding: 0; margin: 0; float:left; }
+
+.middle_banner { width:65%; padding: 0; margin: 0; float:left; text-align:center; }
+
+.middle_banner h1 { padding: 0; margin: 0; font-family: MyraidPro Semibold; color:#FFF; font-size:102.11px; }
+
+.middle_banner h2 { font-family: MyraidPro Semibold; font-size:102.11px; color:#000; padding: 0; margin: 0 0 0 0; }
+
+.middle_banner p { font-family: MyraidPro Italic; font-size:18px; padding: 0; margin: 0; }
+
+.right_banner { width:15%; padding: 0; margin: 0; float:left; }
+
+.right_banner img { float:right; }
+
+.social_media { width:5%; padding: 0; float:right; right:150px; top:450px; position:fixed; }
+
+.social_media a img { display: block; padding: 0; margin: 15px; }
+
+.dots { padding: 0; margin: 30px 0 0 0; width:100%; float:left; }
+
+.dots img { padding: 0; display:block; margin-left: auto; margin-right:auto; }
+
+#our_work { height:577px; background:url(../images/methodology_background_03.jpg) no-repeat #0fa7d2; background-size:cover; }
+
+.main_work { padding: 0; margin: 0 auto; width:960px; }
+
+.left_work { padding: 0; margin: 60px 0 0 0; width:43%; float:left; }
+
+.left_work h1 { font-family: MyraidPro Bold; padding: 0; margin: 0; font-size:; color:#FFF; font-size:172.11px; line-height:123.92px; }
+
+.left_work h2 { font-family: MyraidPro Semibold; padding: 0; margin: 0; color:#f0b919; font-size:150px; line-height:123.92px; }
+
+.left_work h3 { font-family: MyraidPro Semibold; padding: 0; margin: 0; color:#FFF; font-size:60px; line-height:82.61px; }
+
+.left_work p { font-family: MyraidPro Italic; padding: 0; margin: 0; font-size:17px; color:#000; line-height:normal; }
+
+.right_work { padding: 0; margin: 100px 0 0 100px; width:45%; float:left; }
+
+.big_circle { background:url(../images/boys_bg_img_03.png) no-repeat; width:412px; height:412px; }
+
+.big_circle p { color:#FFF; font-size:20px; font-family: MyraidPro Semibold; padding: 0; margin: 0; }
+
+.cirlce_upper_part { padding: 0; margin: 0; text-align:center; }
+
+.cirlce_left_part { float:left; padding: 0; margin: 70px 0 0 15px; }
+
+.cirlce_right_part { float:right; padding: 0; margin: 60px 10px 0 0; }
+
+.cirlce_bottom_part { padding: 0; margin: 220px 0 0 0; text-align:center; }
+
+#services { height:700px; background:url(../images/services_bg_04.jpg) no-repeat #c41230; background-size:cover; }
+
+.main_services { padding: 0; margin: 0 auto; width:960px; }
+
+.our_services { padding: 0; margin: 0; width:100%; }
+
+.services_text { width:55%; }
+
+.services_text h1 { font-family: MyraidPro Bold; padding: 0; margin: 0; font-size:; color:#FFF; font-size:172.11px; line-height:123.92px; }
+
+.services_text h2 { font-family: MyraidPro Semibold; padding: 0; margin: 0; color:#f0b919; font-size:150px; line-height:123.92px; }
+
+.services_text p { font-family: MyraidPro Italic; padding: 0; margin: 0; font-size:17px; color:#000; line-height:normal; }
+
+.services_img { padding: 0; margin: 60px 0 0 0; }
+
+.cirlce { height:200px; width:200px; border-radius:100px; background:#FFF; float:left; margin: 30px 0 0 40px; padding: 0; }
+
+.cirlce a { padding: 0; margin: 30px 0 0 0; }
+
+.cirlce a img { margin-right:auto; margin-left:auto; display:block; margin-top:50px; }
+
+.cirlce_part { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-480px; margin-left:165px; text-align:center; display:none; }
+
+.cirlce_part img { padding: 0; margin: 70px 0 0 0; }
+
+.cirlce_part h4 { font-size:172.11px; line-height:123.92px; color:#000; font-family: MyraidPro Bold; padding: 0; margin: 0; }
+
+.cirlce_part section { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0; margin: 0 0 0 50px; color:#ffb619; }
+
+.cirlce_part section span { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
+
+.cirlce_part .left_arrow { padding: 0; margin: 48px 0 0 0; float:left; }
+
+.cirlce_part .right_arrow { padding: 0; margin: 46px 0 0 0; float:left; }
+
+.cirlce_part p { padding: 0 120px; margin: 0 0 0 30px; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
+
+.pad_cirlce_part { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-480px; margin-left:-73px; text-align:center; }
+
+.pad_cirlce_part img { padding: 0; margin: 70px 0 0 0; }
+
+.pad_cirlce_part h4 { font-size:172.11px; line-height:123.92px; color:#000; font-family: MyraidPro Bold; padding: 0; margin: 0; }
+
+.pad_cirlce_part section { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0; margin: 0; color:#ffb619; }
+
+.pad_cirlce_part section span { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
+
+.pad_cirlce_part .left_arrow { padding: 0; margin: 48px 0 0 0; float:left; }
+
+.pad_cirlce_part .right_arrow { padding: 0; margin: 46px 0 0 0; float:left; }
+
+.pad_cirlce_part p { padding: 0 120px; margin: 0 0 0 30px; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
+
+.brush_cirlce_part { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-460px; margin-left:-313px; text-align:center; display:none; }
+
+.brush_cirlce_part img { padding: 0; margin: 70px 0 0 0; }
+
+.brush_cirlce_part h4 { font-size:172.11px; line-height:123.92px; color:#000; font-family: MyraidPro Bold; padding: 0; margin: 0; }
+
+.brush_cirlce_part section { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0; margin: 0; color:#ffb619; }
+
+.brush_cirlce_part section span { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
+
+.brush_cirlce_part .left_arrow { padding: 0; margin: 48px 0 0 0; float:left; }
+
+.brush_cirlce_part .right_arrow { padding: 0; margin: 46px 0 0 0; float:left; }
+
+.brush_cirlce_part p { padding: 0 120px; margin: 0 0 0 30px; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
+
+.comments_cirlce_part  { background:#FFF; border-radius:30px; position:absolute; width:587px; height:562px; padding: 0; margin: 0; float:left; margin-top:-470px; margin-left:-553px; text-align:center; display:none; }
+
+.comments_cirlce_part img { padding: 0; margin: 70px 0 0 0; }
+
+.comments_cirlce_part h4 { font-size:172.11px; line-height:123.92px; color:#000; font-family: MyraidPro Bold; padding: 0; margin: 0; }
+
+.comments_cirlce_part section {font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
+
+.comments_cirlce_part section span { font-family: MyraidPro Bold; line-height:123.92px; font-size:30px; padding: 0px 0 0 0; margin: 0; color:#ffb619; float:left; }
+
+.comments_cirlce_part .left_arrow { padding: 0; margin: 48px 0 0 0; float:left; }
+
+.comments_cirlce_part .right_arrow { padding: 0; margin: 46px 0 0 0; float:left; }
+
+.comments_cirlce_part p { padding: 0 120px; margin: 0 0 0 30px; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
+
+.cross_img { position:absolute; padding: 0; margin: -55px 0 0 570px; float:right; }
+
+.cross_img a img { width:30px; height:30px; }
+
+#contact_us { height:647px; background:url(../images/contactus_bg.jpg) no-repeat #f1bd25; background-size:cover; }
+
+.contact_us_part { padding: 0; margin: 0 auto; width:960px; }
+
+.contact_us_part h2 { position: relative; overflow: hidden; text-align: center; padding: 0; margin: 0; }
+
+.contact_us_part h2 span { display: inline-block; vertical-align: baseline; zoom: 1; *display: inline; *vertical-align: auto;  position: relative; padding: 0 20px; margin: 30px 0 0 0; font-size:67px; font-family: Ball; color:#ffb619; }
+
+.contact_us_part h2 span:before, h2 span:after { content: ''; display: block; width: 1000px; position: absolute; top: 0.73em;
+                                                 border-top: 1px solid white; }
+
+.contact_us_part h2 span:before { right: 100%; }
+
+.contact_us_part h2 span:after { left: 100%; }
+
+.left_contact { padding: 0; margin: 24px 0 0 0; float:left; width:28.7%; }
+
+.left_contact p { font-family: MyraidPro Regular; font-size:14px; color:#FFF; padding: 0; margin: 0; }
+
+.contact_input { padding: 0 0; margin: 10px 0; }
+
+.contact_input p { padding: 3px 0; margin: 0; }
+
+.contact_text { width:275px; height:26px; color:#FFF; background:#2f2f2f; border:none; }
+
+.left_contact textarea { background:#2f2f2f; border:none; }
+
+.left_contact input[type=button] { padding: 0; margin: 5px 0 0 0; float:right; background:#2f2f2f; font-size:22px; font-family: Ball; color:#ffb619; border:none; width:90px; height:26px; }
+
+.left_contact input[type=button]:hover { background:#ffb619; cursor:pointer; color:#2f2f2f; }
+
+.right_contact { padding: 0 100px; margin: 24px 0 0 0; float:left; width:48%; }
+
+.right_contact h5 { padding: 0; margin: 0; color:#cfcfcf; font-size:36px; font-family: MyraidPro Regular; line-height:123.92px; font-weight:normal; }
+
+.right_contact p { padding: 0; margin: 0; color:#b2b2b2; font-size:14px; font-family: MyraidPro Regular; line-height:normal; }
+
+.social_media_images { padding: 0; margin: 30px 0 0 0; }
+
+.social_media_images a { padding: 0; margin: 0; }
+
+.social_media_images img { padding: 0 0px; margin: 0 5px; }
+
+.tweet_hover { float:left; }
+
+.tweet_hover a img:hover { background:url(../images/tweeter_hover_img_03.jpg) no-repeat; }
+
+.facebook_hover { float:left; }
+
+.facebook_hover a img:hover { background:url(../images/facebook_hover_img_03.jpg) no-repeat; }
+
+.google_hover { float:left; }
+
+.google_hover a img:hover { background:url(../images/google_hover_img_03.jpg) no-repeat; }
+
+.linkedin_hover { float:left; }
+
+.linkedin_hover a img:hover { background:url(../images/linkedin_hover_img_03.jpg) no-repeat; }
+
+.back_to_up { float:left; position:absolute; right:210px; }
+
+.back_to_up_services { float:left; position:absolute; right:210px; margin: 0 0 0 0; }
+
+.back_to_up_contact { float:left; position:absolute; right:210px; margin: 0px 0 0 0; }
+
+.cirlce_upper_part { padding: 0; margin: 0; text-align:center; }
+
+.games_arrow { padding: 0; margin: 10px 0 0px 0; top:40px; float:left; }
+a { outline:none; }

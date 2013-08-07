@@ -1,0 +1,63 @@
+/* 
+    Document   : customStyle
+    Created on : Aug 6, 2013, 11:15:35 AM
+    Author     : aliabbas
+    Description:
+        Purpose of the stylesheet follows.
+        devloper changes
+*/
+
+.cirlce_part {
+    display: none;
+}
+.back_to_up_contact  {
+    z-index: 10;
+}
+.left_contact textarea {
+    color: white;
+    width: 275px;
+}
+input[type=button],input[type=submit] {
+    cursor: pointer;
+}
+.left_contact input[type=submit] { padding: 0; margin: 5px 0 0 0; float:right; background:#2f2f2f; font-size:22px; font-family: Ball; color:#ffb619; border:none; width:90px; height:26px; }
+
+.contact_input label,div#captcha a {
+    color: #FFFFFF;
+    font-family: MyraidPro Regular;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+div#captcha a{margin-left: 5px;}
+div#captcha input[type=text] {
+    background: none repeat scroll 0 0 #2F2F2F;
+    border: medium none;
+    color: #FFFFFF;
+    height: 26px;
+    width: 275px;
+}
+div.contact_input input[type=text].error,div#captcha input[type=text].error {
+    background:red !important;
+}
+div.errorMessage {
+    color: red;
+    font-family: MyraidPro Regular;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.flash-message {
+    color: white;
+    font-family: MyraidPro Regular;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.contact_us_part h2 span {
+    font-size: 67.89px;
+}
+.cirlce_data section img.left_arrow,.cirlce_data section img.right_arrow{
+    cursor: pointer;
+}
