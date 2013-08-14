@@ -174,20 +174,31 @@
 
 
             <section>Web Bases Social Networking setups</section>
-            <p>We are providing open source and custom based social netwroking setups , like facebook and other social apps. We have expertises to handle open source pluggins of social network under wordpress or devloping according to own custom plateform.</p>
+            <p>
+                We are providing custom made social networking setup, like facebook and other social application. We have expertise to handle custom plugins of social network and developing customized platform.
+            </p>
             <section>Web based CRM's</section>
-            <p>Our CRM team has complete command over the Sugar framework and SOAP architecture allowing us to build extensive custom products on top of SugarCRM along with confidently mapping their unique business process requirements onto SugarCRM via Customizations and Integrations.</p>
+            <p>
+                Our CRM team has complete command over the custom designed and built CRM apps and SOAP architecture allowing us to build extensive custom products along with confidently mapping their unique business process requirements onto CRM via Customizations and Integrations.
+            </p>
             <section>Web Based CMS</section>
-            <p>We simplify website management in order to allow business owners and non-technical personnel to add, author, and update web content on the fly with multilingual support. Our customized CMS puts messaging in the hands of the people who know it best, as it applies workflows, approvals, and permissions, as well as maintains a complete history of the changes. Editing content is as easy as editing a document with our CMS integration. Wordpress and Joomla are our experties</p>
+            <p>
+                We simplify website management in order to allow business owners and non-technical personnel to add, author, and update web content on the fly with multilingual support. Our customized CMS puts messaging in the hands of the people who know it best, as it applies workflows, approvals, and permissions, as well as maintains a complete history of the changes. Editing content is as easy as editing a document with our CMS integration. Wordpress and Joomla are our expertise
+            </p>
             <section>Web Based Business Applications</section>
-            <p>We simplify the management of development of business applications according client requirment, e.g sale , order , purchase, business , project management  systems. System will provide all the all the features like data stroing , reporting , emailing , access control security. </p>
-            <section>Web Based Business Applications</section>
-            <p>We are providing  business accounting web development solutions also provding the services to sync their softwares with other accounting systems using web services like xero integration.</p>
+            <p>
+                We simplify the management of development of business applications according client requirement, e.g. sale, order, purchase, business, project management systems.
+                System will provide the entire all the features like data storing, reporting, emailing, access control security.
+            </p>
+            <section>Web Based Accounting Applications</section>
+            <p>
+                We are providing business accounting web development solutions also providing the services to sync their software’s with other accounting systems using web services like zero integration.
+            </p>
             <section>Ecommerce Development</section>
-            <p>We are providing simplest ecommerce solutions , we have the expertises of custom based ecommerce devolpment also provding other open source plateforms like wordpress wocommerce pluggin, open cart, magento.</p>
+            <p>We are providing simplest ecommerce solutions; we have the expertise of custom based ecommerce development also providing other open source platforms like wordpress ecommerce plug-in, open cart, magento.</p>
 
             <section>Facebook applications</section>
-            <p>We are dealign with an awsome plateform converting every app to facebook application, we have expertise to handle small and larger (businss) apps on facebook , automatically sharing , posting on walls , following facebook api.</p>
+            <p>|We are dealing with platform conversion for your every app to face book application, we have expertise to handle small and larger (business) apps on face book, automatic sharing, posting on walls, following face book API.</p>
         </div>
 
         <div id='pad_content' style='padding:10px; background:#fff;'>
@@ -210,7 +221,8 @@
             <section>Website designing</section>
             <p>Your website is your presence on the Web and your online presence is often your first interaction with potential customers. We, at D-tech, thoroughly plan and implement tailored designs to meet your particular needs and depict your brand identity in the perfect fashion. We take utmost care in web designing for you. We bring innovation, novelty and creativity at your doorstep within the purview of your organizational goals and brand strategy.</p>
             <section> Slicing services</section>
-            <p>our html css coders has awesome expertises to hanlde the browser camptible and responsive design , We are dealing with html 5 , css 3.0 , web 2.0 standards to handle all html stuff</p>
+            <p> Our HTML and CSS coders have professional expertise to handle the browser compatibility and responsive design, we are dealing with html 5, css 3.0, web 2.0 standards to handle all html stuff
+            </p>
 
         </div>
         <div id='brand_content' style='padding:10px; background:#fff;'>
