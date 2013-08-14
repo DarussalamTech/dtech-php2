@@ -11,14 +11,24 @@
 
 
         <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/packages/jui/colorbox/colorbox.css">
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/packages/jui/carousal/coin-slider-styles.css">
 
         <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/packages/jui/colorbox/jquery.colorbox.js"></script>
+        <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/packages/jui/carousal/coin-slider.min.js"></script>
 
 
         <title>D-Tech</title>
 
         <script type="text/javascript">
             jQuery(document).ready(function() {
+
+                jQuery("#coin").coinslider(
+                        {
+                            width: 460, delay: 5000, height: 215,
+                            effect :'rain'
+                        }
+                );
+
                 if (window.location.hash != "" && window.location.hash != "#") {
                     dtech.scrolltoSection(window.location.hash.substring(1, window.location.hash.length));
                 }
@@ -32,6 +42,10 @@
                 }, function() {
                     $(this).attr("src", $(this).attr("un-hover"));
                 });
+
+
+
+
 
             })
         </script>
@@ -55,28 +69,35 @@
                     </ul>
                 </div>
                 <div class="main_banner">
-                    <div class="left_banner">
-                        <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/left_arrow_03.png" /></a>
+
+                    <div class="middle_banner" id="coin">
+
+
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03_url" target="_blank">
+                            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03.png" />
+                            <span>
+                                our success is not only due to the quality of our work; it’s down to attitude, our approach and the way we treat our clients.
+                            </span>
+                        </a>
+
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03_url" target="_blank">
+                            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03.png" />
+                            <span>
+                                our success is not only due to the quality of our work; it’s down to attitude, our approach and the way we treat our clients.
+                            </span>
+                        </a>
                     </div>
-                    <div class="middle_banner">
-                        <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03.png" />
-                        <p>our success is not only due to the quality of our work; it’s down to attitude, 
-                            our approach and the way we treat our clients.</p>
-                    </div>
-                    <div class="right_banner">
-                        <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/right_arrow_03.png" /></a>
-                    </div>
+
                     <div class="social_media">
                         <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_tweeter_03.png" /></a>
                         <a href="http://facebook.com/dtech.co" target="_blank"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_facebook_03.png" /></a>
                         <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_linkedin_03.png" /></a>
                     </div>
                 </div>
-                <div class="dots">
-                    <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_dots_03.jpg" />
-                </div>
+
             </div>
         </div>
+
         <div id="main_about_us">
             <div id="about_us">
                 <div class="back_to_up">
