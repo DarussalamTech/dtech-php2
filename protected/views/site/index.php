@@ -69,7 +69,7 @@ if ($model->hasErrors()) {
     <div class="right_contact">
         <h5>Get in touch</h5>
 
-        <div><a href="www.dtechsystems.co.uk">www.dtechsystems.co.uk</a></div>
+        <div><a href="http://www.dtechsystems.co.uk">www.dtechsystems.co.uk</a></div>
         <div> 
             <?php
             echo CHtml::mailto("Contact@dtechsystems.co.uk");
@@ -81,7 +81,7 @@ if ($model->hasErrors()) {
             ?>
 
         </div>
-        <div><a href="www.facebook.com/dtech.co">www.facebook.com/dtech.co</a></div>
+        <div><a href="http://www.facebook.com/dtech.co">www.facebook.com/dtech.co</a></div>
         <div>Skype: Talha.jutt</div>
 
         <h6>UK Office:</h6>
