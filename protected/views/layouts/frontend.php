@@ -138,20 +138,20 @@
                 <div class="right_work">
                     <div class="big_circle">
                         <div class="cirlce_upper_part">
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/tab_like_img_03.png" /></a>
+                            <a href="javascript:void()"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/tab_like_img_03.png" /></a>
                             <p>Requirements</p>
                         </div>
                         <div class="cirlce_left_part">
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/releasing_img_03.png" /></a>
+                            <a href="javascript:void()"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/releasing_img_03.png" /></a>
                             <p>Release</p>
                         </div>
                         <div class="cirlce_right_part">
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/brush_big_img_03.png" /></a>
+                            <a href="javascript:void()"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/brush_big_img_03.png" /></a>
                             <p>Design</p>
                         </div>
                         <div class="cirlce_bottom_part">
                             <p>Development</p>
-                            <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/keyboard_img_03.png" /></a>
+                            <a href="javascript:void()"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/keyboard_img_03.png" /></a>
                         </div>
                     </div>
                 </div>
