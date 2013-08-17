@@ -24,7 +24,7 @@
 
                 jQuery("#coin").coinslider(
                         {
-                            width: 470, delay: 5000, height: 215,
+                            width: 440, delay: 5000, height: 215,
                             effect: 'rain'
                         }
                 );
@@ -73,12 +73,12 @@
                     <div class="middle_banner" id="coin">
 
 
-                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03_url" target="_blank">
-                            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03.jpg" />
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03_1_url" target="_blank">
+                            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03_1.jpg" />
                      
                         </a>
-                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/team2_url" target="_blank">
-                            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/team2.jpg" />
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/1.1_url" target="_blank">
+                            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/1.1.jpg" />
                      
                         </a>
                         <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/team1_url" target="_blank">
