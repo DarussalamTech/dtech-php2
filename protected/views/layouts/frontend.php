@@ -77,8 +77,8 @@
                             <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03_1.jpg" />
                      
                         </a>
-                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/2.2_url" target="_blank">
-                            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/2.2.jpg" />
+                        <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/2.3_url" target="_blank">
+                            <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/2.3.jpg" />
                      
                         </a>
                         <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/3.2_url" target="_blank">
