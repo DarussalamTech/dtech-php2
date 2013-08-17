@@ -2,7 +2,7 @@
 $form = $this->beginWidget('CActiveForm', array(
     'id' => 'contact-form',
     'enableClientValidation' => true,
-    'focus' => array($model, 'name'),
+    //'focus' => array($model, 'name'),
     'clientOptions' => array(
         'validateOnSubmit' => true,
     ),
@@ -68,6 +68,34 @@ if ($model->hasErrors()) {
     </div>
     <div class="right_contact">
         <h5>Get in touch</h5>
+
+        <div><a href="www.dtechsystems.co.uk">www.dtechsystems.co.uk</a></div>
+        <div> 
+            <?php
+            echo CHtml::mailto("Contact@dtechsystems.co.uk");
+            ?>
+        </div>
+        <div>
+            <?php
+            echo CHtml::mailto("Talha@darussalamksa.com");
+            ?>
+
+        </div>
+        <div><a href="www.facebook.com/dtech.co">www.facebook.com/dtech.co</a></div>
+        <div>Skype: Talha.jutt</div>
+
+        <h6>UK Office:</h6>
+        <div>Leyton Business Centre. Unit 17,
+            Etloe Road, Leyton London E10 7BT</div>
+
+        <h6>Pakistan Office:</h6>
+        <div>Office # 321, 602, Siddiq Trade Centre,
+            Gulberg 2, Lahore – Pakistan</div>
+
+        <h6>Saudi Arabia Office:</h6>
+        <div>P.O. Box 22743, Riyadh 11416
+            Kingdom of Saudi Arabia
+            00966- 11- 4033962</div>
         <p>I am currently accepting work inquiries. Fill out the form and I will get back to you as soon as I can. In the meantime, bother me on various social networks.</p>
         <div class="social_media_images">
             <div class="tweet_hover">
