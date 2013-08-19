@@ -19,8 +19,9 @@ var dtech = {
      * @returns 
      */
     scrolltoSection: function(section_id) {
+        console.log($("#" + section_id).offset().top);
         $('html, body').animate({
-            scrollTop: $("#" + section_id).offset().top
+            scrollTop: $("#" + section_id).offset().top-130
         }, 2000);
     },
     /**

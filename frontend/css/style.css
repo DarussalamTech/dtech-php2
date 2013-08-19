@@ -21,7 +21,7 @@ a img { border:none; }
 
 @font-face { font-family: Ball; src:url(../fonts/BALLW__.TTF); }
 
-#banner { height:577px; background:url(../images/map_bg.jpg) no-repeat #f1bd25; background-size:cover; border-bottom:1px solid #FFF; }
+#banner { height:450px; padding:80px 0 0 0; background:url(../images/map_bg.jpg) no-repeat #f1bd25; background-size:cover; border-bottom:1px solid #FFF; }
 
 .banner_part { padding: 0; margin: 0 auto; width:960px; }
 

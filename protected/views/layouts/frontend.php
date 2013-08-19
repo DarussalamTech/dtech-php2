@@ -52,10 +52,10 @@
     </head>
 
     <body>
-        <div id="banner">
+        <div id="header">
             <div class="banner_part">
                 <div class="logo">
-                    <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/logo_02.jpg" /></a>
+                    <a href="#"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/logo_img_02.png" /></a>
                 </div>
                 <div class="nav">
                     <ul>
@@ -68,6 +68,13 @@
                         <li><a href="#contact_us" onclick="dtech.scrolltoSection('contact_us')">Contact us</a></li>
                     </ul>
                 </div>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+        <div id="banner">
+            <div class="banner_part">
+
                 <div class="main_banner">
 
                     <div class="middle_banner" id="coin">

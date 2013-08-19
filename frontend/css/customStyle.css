@@ -108,3 +108,9 @@ a.cs-active {
 .about_us_content p ,.left_work p{
     text-align: justify;
 }
+#header {
+    position: fixed;
+    z-index: 100;
+    background: #f0b819;
+    width: 100%;
+}
