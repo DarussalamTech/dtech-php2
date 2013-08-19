@@ -102,3 +102,9 @@ a.cs-active {
     cursor: inherit;
     
 }
+.about_us_content p {
+    text-align: justify;
+}
+.about_us_content p ,.left_work p{
+    text-align: justify;
+}
