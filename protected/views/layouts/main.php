@@ -3,6 +3,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="en" />
+        
+        <meta name="keywords" content="internet marketing,website development,web marketing,website services,islamic apps" />
+        <meta name="description" content="DTech, DTech systems, Darussalam Tech" />
+        
         <script type="text/javascript" src="<?php echo Yii::app()->baseUrl ?>/packages/jui/js/jquery.js"></script>
         <!-- blueprint CSS framework -->
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/css/screen-override.css" media="screen, projection" />
