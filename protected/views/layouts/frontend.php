@@ -268,7 +268,7 @@
 
             <section>Website Designing</section>
             <p>Your website is your presence on the web and your online presence is often your first interaction with potential customers. We at D-tech thoroughly plan and implement tailored designs to meet your particular needs and depict your brand identity in the perfect fashion. We take the utmost care in web designing for you. We bring innovation, originality and creativity at your doorstep within the purview of your organizational goals and brand strategy.</p>
-            <section> Slicing services</section>
+            <section> Slicing Services</section>
             <p> Our html CSS coders have awesome expertise in handling browser compatibility and responsive design. We work with html 5, CSS 3.0, web 2.0 standards to handle all html requirements.</p>
             <section>Digitization of Books</section>
             <p>
@@ -307,17 +307,14 @@
 
 
             <ul class="brand_ul">
-                <li class="noline">Logo design</li>
-                <li class="noline">Banner design</li>
-                <li class="noline">Business card design</li>
-                <li class="noline">Stationery design</li>
-                <li>Interfaces</li>  
-                <p>
-                    The logo, banner, business cards, stationery and interfaces are all outward expressions of your brand. You have to brand these to get noticed by the customer, and to effectively communicate and relate with the customer.
-                    Brand identity is crucial at any setup, be it commercial or non-commercial. Therefore, you need to have it all planned so that the direction of the advertising and marketing efforts can be truly and accurately defined for all the stakeholders. Moreover, a well-planned strategy will precisely define the brand identity of the brand (and company) in the customer’s mind.
-                </p>
-            </ul>
+                <li class="noline">Logo design , Banner design , Business card design , Stationery design , Interfaces</li>
+          
 
+            </ul>
+            <p>
+                The logo, banner, business cards, stationery and interfaces are all outward expressions of your brand. You have to brand these to get noticed by the customer, and to effectively communicate and relate with the customer.
+                Brand identity is crucial at any setup, be it commercial or non-commercial. Therefore, you need to have it all planned so that the direction of the advertising and marketing efforts can be truly and accurately defined for all the stakeholders. Moreover, a well-planned strategy will precisely define the brand identity of the brand (and company) in the customer’s mind.
+            </p>
 
 
 
