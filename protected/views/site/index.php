@@ -99,7 +99,7 @@ if ($model->hasErrors()) {
         <p>I am currently accepting work inquiries. Fill out the form and I will get back to you as soon as I can. In the meantime, bother me on various social networks.</p>
         <div class="social_media_images">
             <div class="tweet_hover">
-                <a href="javascript:void(0)"><img 
+                <a href="https://twitter.com/dtechnet"><img 
                         hover ="<?php echo Yii::app()->baseUrl; ?>/frontend/images/tweeter_hover_img_03.png"
                         un-hover ="<?php echo Yii::app()->baseUrl; ?>/frontend/images/tweeter_img_03.png"
                         src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/tweeter_img_03.png"
@@ -113,7 +113,7 @@ if ($model->hasErrors()) {
                         src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/facebook_big_img_03.png" /></a>
             </div>
             <div class="google_hover">
-                <a href="javascript:void(0)">
+                <a href="https://plus.google.com/u/3/b/105213190898214474427/105213190898214474427">
                     <img 
                         hover ="<?php echo Yii::app()->baseUrl; ?>/frontend/images/google_hover_img_03.png"
                         un-hover ="<?php echo Yii::app()->baseUrl; ?>/frontend/images/google_img_03.png"

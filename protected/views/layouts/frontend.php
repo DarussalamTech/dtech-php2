@@ -92,7 +92,7 @@
                     </div>
 
                     <div class="social_media">
-                        <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_tweeter_03.png" /></a>
+                        <a href="https://twitter.com/dtechnet"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_tweeter_03.png" /></a>
                         <a href="http://facebook.com/dtech.co" target="_blank"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_facebook_03.png" /></a>
                         <a href="javascript:void(0)"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/banner_linkedin_03.png" /></a>
                     </div>
