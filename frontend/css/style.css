@@ -191,7 +191,7 @@ a img { border:none; }
 
 .right_contact { padding: 0 100px; margin: 24px 0 0 0; float:left; width:48%; }
 
-.right_contact h5 { padding: 0; margin: 0; color:#cfcfcf; font-size:36px; font-family: MyraidPro Regular; line-height:123.92px; font-weight:normal; }
+.right_contact h5 { padding: 0; margin: 0; color:#cfcfcf; font-size:36px; font-family: MyraidPro Regular; line-height:58.92px; font-weight:normal; }
 
 .right_contact p { padding: 0; margin: 0; color:#b2b2b2; font-size:14px; font-family: MyraidPro Regular; line-height:normal; }
 
@@ -203,23 +203,15 @@ a img { border:none; }
 
 .social_media_images a { padding: 0; margin: 0; }
 
-.social_media_images img { padding: 0 0px; margin: 0 5px; }
+.social_media_images img { padding: 0 0px; margin: 15px 5px 0 5px; }
 
-.tweet_hover { float:left; }
-
-
+.tweet_hover { float:left; margin: 0px 0 0 0; }
 
 .facebook_hover { float:left; }
 
-
-
 .google_hover { float:left; }
 
-
-
 .linkedin_hover { float:left; }
-
-
 
 .back_to_up { float:left; position:absolute; right:210px; }
 
