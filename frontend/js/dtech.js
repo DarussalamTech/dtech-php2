@@ -21,7 +21,7 @@ var dtech = {
     scrolltoSection: function(section_id) {
        
         $('html, body').animate({
-            scrollTop: $("#" + section_id).offset().top-130
+            scrollTop: $("#" + section_id).offset().top-132
         }, 2000);
     },
     /**
