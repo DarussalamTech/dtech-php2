@@ -108,11 +108,25 @@ a img { border:none; }
 .services_img p.section_heading {font-family: MyraidPro Bold; line-height:64.92px; font-size:30px;margin: 0; color:#ffb619;text-align: left;margin-left: 10px;}
 .services_img p {color: #000000; font-family: MyraidPro Italic; font-size:14px; line-height:normal; }
 
-.cirlce { height:200px; width:200px; border-radius:100px; background:#FFF; float:left; margin: 30px 0 0 40px; padding: 0; }
+.cirlce {   
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 120px 120px 120px 120px;
+    float: left;
+    height: 230px;
+    margin: 30px 0 0 10px;
+    padding: 0;
+    width: 230px;
+}
+
+.cirlce p {
+    text-align: center;
+    font-size: 18px;
+    font-family: MyraidPro Italic;
+}
 
 .cirlce a { padding: 0; margin: 30px 0 0 0; }
 
-.cirlce a img { margin-right:auto; margin-left:auto; display:block; margin-top:50px; }
+.cirlce a img { margin-right:auto; margin-left:auto; display:block; margin-top:50px;height: 98px; }
 
 .cirlce_part { background:#FFF; position:absolute; width:587px; height:500px; padding: 0; margin: 0; float:left;  text-align:center; overflow:auto; }
 

@@ -83,12 +83,14 @@
 #cboxLoadedContent .content_image  {
     text-align: center;
 }
-
-#cboxLoadedContent  article {
+#cboxLoadedContent p {
+    text-align: justify;
+}
+#cboxLoadedContent  li {
     text-align:left; font-family: MyraidPro Bold; 
     line-height:64.92px; font-size:20px; padding: 0 0 0 0; margin: 0; color:#ffb619;
 }
-#cboxLoadedContent  article.noline {
+#cboxLoadedContent  li {
     text-align:left; font-family: MyraidPro Bold; 
     font-size:20px; padding: 0 0 0 0; margin: 0; color:#ffb619;
     line-height: 30px;

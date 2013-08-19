@@ -75,20 +75,20 @@
 
                         <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03_1_url" target="_blank">
                             <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/high_values_img_03_1.jpg" />
-                     
+
                         </a>
                         <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/2.3_url" target="_blank">
                             <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/2.3.jpg" />
-                     
+
                         </a>
                         <a href="<?php echo Yii::app()->baseUrl; ?>/frontend/images/3.2_url" target="_blank">
                             <img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/3.2.jpg" />
-                     
-                        </a>
-                    
-              
 
-      
+                        </a>
+
+
+
+
                     </div>
 
                     <div class="social_media">
@@ -141,7 +141,7 @@
                     <p>
                         The project manager liaising with us will receive daily updates via email or on the phone about their project. 
                     </p>
-                
+
                 </div>
                 <div class="right_work">
                     <div class="big_circle">
@@ -176,26 +176,28 @@
                     <div class="services_text">
                         <h1>Our</h1>
                         <h2>Services</h2>
-                       
+
                     </div>
                 </div>
                 <div class="services_img">
                     <div class="cirlce">
                         <a class ="inline" href="#inline_content" ><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/lcd_03.png" /></a>
-
+                        <p>Web Applications</p>
                     </div>
                 </div>
                 <div class="cirlce" id="app-cirle">
                     <a class="pad" href="#pad_content" ><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/pad_img_03.jpg" /></a>
+                    <p>IOS/Android</p>
 
                 </div>
                 <div class="cirlce" id="brush-cirle cirlce_data">
                     <a class="design" href="#design_content" ><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/brush_img_03.jpg" /></a>
+                    <p>Web Design</p>
 
                 </div>
                 <div class="cirlce" id="back-cirle">
                     <a class="brand" href="#brand_content" ><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/comments_img_03.jpg" /></a>
-
+                    <p>Brand Identity</p>
                 </div>
             </div>
 
@@ -283,25 +285,33 @@
             <p>
                 Strategy gives you direction and strategic planning; answering these questions requires expertise, professional experience and foresight. D-tech provides a platform more like a one stop shop, where we take care of all your worries and handle everything related to your brand identity needs with the utmost care.
             </p>
-            <article>Internet Marketing, Website Marketing, SEO & Social Media Marketing</article>
-            <p>
-                We provide a free consultation to all our clients to help build a better working relationship. It also gives clients an opportunity to see the work being done here at D-tech.
-            </p>
-            <p>
-                We provide full-fledged services for web marketing, search engine optimization (SEO) and Social Media Marketing (SMM).
-            </p>
-            <p>
-                Advertising and marketing efforts using web and email require the right kind of expertise to correctly target the potential customer base. These efforts must be customized to address the marketing strategy and goals set for the world wide web.
-            </p>
-            <article class="noline">Logo design</article>
-            <article class="noline">Banner design</article>
-            <article class="noline">Business card design</article>
-            <article class="noline">Stationery design</article>
-            <article>Interfaces</article>
-            <p>
-                The logo, banner, business cards, stationery and interfaces are all outward expressions of your brand. You have to brand these to get noticed by the customer, and to effectively communicate and relate with the customer.
-                Brand identity is crucial at any setup, be it commercial or non-commercial. Therefore, you need to have it all planned so that the direction of the advertising and marketing efforts can be truly and accurately defined for all the stakeholders. Moreover, a well-planned strategy will precisely define the brand identity of the brand (and company) in the customer’s mind.
-            </p>
+            <ul class="brand_ul">
+                <li>Internet Marketing, Website Marketing, SEO & Social Media Marketing</li>
+                <p>
+                    We provide a free consultation to all our clients to help build a better working relationship. It also gives clients an opportunity to see the work being done here at D-tech.
+                </p>
+                <p>
+                    We provide full-fledged services for web marketing, search engine optimization (SEO) and Social Media Marketing (SMM).
+                </p>
+                <p>
+                    Advertising and marketing efforts using web and email require the right kind of expertise to correctly target the potential customer base. These efforts must be customized to address the marketing strategy and goals set for the world wide web.
+                </p>
+            </ul>
+
+
+            <ul class="brand_ul">
+                <li class="noline">Logo design</li>
+                <li class="noline">Banner design</li>
+                <li class="noline">Business card design</li>
+                <li class="noline">Stationery design</li>
+                <li>Interfaces</li>  
+                <p>
+                    The logo, banner, business cards, stationery and interfaces are all outward expressions of your brand. You have to brand these to get noticed by the customer, and to effectively communicate and relate with the customer.
+                    Brand identity is crucial at any setup, be it commercial or non-commercial. Therefore, you need to have it all planned so that the direction of the advertising and marketing efforts can be truly and accurately defined for all the stakeholders. Moreover, a well-planned strategy will precisely define the brand identity of the brand (and company) in the customer’s mind.
+                </p>
+            </ul>
+
+
 
 
         </div>
