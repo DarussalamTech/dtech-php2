@@ -141,9 +141,7 @@
                     <p>
                         The project manager liaising with us will receive daily updates via email or on the phone about their project. 
                     </p>
-                    <p>
-                        Requirements – design – development – release – feedback review – yes (deploy) no (redefine requirement).
-                    </p>
+                
                 </div>
                 <div class="right_work">
                     <div class="big_circle">
@@ -178,10 +176,7 @@
                     <div class="services_text">
                         <h1>Our</h1>
                         <h2>Services</h2>
-                        <p>using agile methodology as an approach to development, we break large projects into smaller parts. Planning is the key to our work. we report on daily basis so taht our client knows what has been the progress of the project.</p>
-                        <p>
-                            We are result-oriented. We know how it works. Let us help deal with your worries while you sit back and relax. More significantly, we say we are done, only when you are satisfied with our work. We guarantee quality results every time.
-                        </p>
+                       
                     </div>
                 </div>
                 <div class="services_img">
