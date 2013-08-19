@@ -17,7 +17,7 @@
         <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/packages/jui/carousal/coin-slider.min.js"></script>
 
 
-        <title>D-Tech</title>
+        <title>D-Tech Systems</title>
 
         <script type="text/javascript">
             jQuery(document).ready(function() {
