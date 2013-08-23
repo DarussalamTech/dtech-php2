@@ -87,12 +87,13 @@
     text-align: justify;
 }
 #cboxLoadedContent  li {
-    text-align:left; font-family: MyraidPro Bold; 
-    line-height:64.92px; font-size:20px; padding: 0 0 0 0; margin: 0; color:#ffb619;
+    text-align:left; 
+	font-family: MyraidPro Bold; 
+    line-height:64.92px; font-size:30px; padding: 0 0 0 0; margin: 0; color:#ffb619;
 }
 #cboxLoadedContent  li {
     text-align:left; font-family: MyraidPro Bold; 
-    font-size:20px; padding: 0 0 0 0; margin: 0; color:#ffb619;
+    font-size:20px; padding: 0 0 0 0; margin: 0 0 0 20px; color:#ffb619;
     line-height: 30px;
     
 }

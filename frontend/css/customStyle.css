@@ -15,12 +15,12 @@
 }
 .left_contact textarea {
     color: white;
-    width: 275px;
+    width: 100%;
 }
 input[type=button],input[type=submit] {
     cursor: pointer;
 }
-.left_contact input[type=submit] { padding: 0; margin: 5px 0 0 0; float:right; background:#2f2f2f; font-size:22px; font-family: Ball; color:#ffb619; border:none; width:90px; height:26px; }
+.left_contact input[type=submit] { padding: 0; margin: 5px 0 0 0; float:right; background:#2f2f2f; font-size:22px; font-family: Ball; color:#ffb619; border:none; width:30%; height:26px; }
 
 .contact_input label,div#captcha a {
     color: #FFFFFF;
@@ -35,7 +35,7 @@ div#captcha input[type=text] {
     border: medium none;
     color: #FFFFFF;
     height: 26px;
-    width: 275px;
+    width: 100%;
 	margin: 20px 0 0 0;
 }
 div.contact_input input[type=text].error,div#captcha input[type=text].error {
@@ -112,5 +112,5 @@ a.cs-active {
     position: fixed;
     z-index: 100;
     background: #f0b819;
-    width: 100%;
+    width: 100%; padding: 0; margin: 0;
 }
