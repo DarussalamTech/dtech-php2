@@ -10,7 +10,7 @@ class SiteController extends Controller {
             // captcha action renders the CAPTCHA image displayed on the contact page
             'captcha' => array(
                 'class' => 'CCaptchaAction',
-                'backColor' => 0x000000,
+                'backColor' => 0x000,
                 'foreColor' =>0xFFFFFF,
                 
             ),
