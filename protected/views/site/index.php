@@ -26,20 +26,29 @@ if ($model->hasErrors()) {
         <a href="javascript:void(0)" onclick="dtech.scrolltoTopOfPage()"><img src="<?php echo Yii::app()->baseUrl; ?>/frontend/images/back_to_up_03.jpg" /></a>
     </div>
     <div class="twelve columns">
-    	<h2><span>Contact Us</span></h2>
-  	</div>
+        <h2><span>Contact Us</span></h2>
+    </div>
     <div class="clear"></div>
-    <span class="flash-message">
 
-        <?php
-        if (Yii::app()->user->hasFlash('email_status')):
 
-            echo Yii::app()->user->getFlash('email_status');
-        endif;
-        ?>
-    </span>
+
     <div class="four columns">
         <div class="left_contact">
+            <span class="flash-message" style="color: yellowgreen; font-size: 12px">
+                <?php
+                if ($model->hasErrors()):
+
+                    echo "* These fields cannot be empty";
+                endif;
+                ?>
+                <?php if (Yii::app()->user->hasFlash('email_status')): ?>
+
+                    <div class="flash-success" style="color:yellow">
+                        <?php echo '<br/>' . Yii::app()->user->getFlash('email_status'); ?>
+                    </div>
+
+                <?php endif; ?>
+            </span>
             <div class="contact_input">
                 <p>Full Name (required)</p>
                 <?php echo $form->textField($model, 'name', array("class" => "contact_text")); ?>
@@ -56,7 +65,7 @@ if ($model->hasErrors()) {
                 <p>Message</p>
                 <?php echo $form->textArea($model, 'body', array('cols' => 32, 'rows' => 7)); ?>
             </div>
-    
+
             <?php if (CCaptcha::checkRequirements()): ?>
                 <div class="contact_input">
                     <?php echo $form->labelEx($model, 'verifyCode'); ?>
@@ -64,43 +73,47 @@ if ($model->hasErrors()) {
                         <?php $this->widget('CCaptcha'); ?>
                         <?php echo $form->textField($model, 'verifyCode'); ?>
                     </div>
-    
-                    <?php echo $form->error($model, 'verifyCode'); ?>
+
+                    <?php //echo $form->error($model, 'verifyCode'); ?>
                 </div>
             <?php endif; ?>
+            <div class="contact_input">
+                <?php echo $form->labelEx($model, 'customer_copy_check'); ?>
+                <?php echo $form->checkBox($model, 'customer_copy_check', array("class" => "contact_text")); ?>
+            </div>
             <?php echo CHtml::submitButton('send'); ?>
         </div>
-  	</div>
+    </div>
     <div class="seven columns">
         <div class="right_contact">
             <h5>Get in touch</h5>
-    		<!--
-            <div><a href="#">www.dtechsystems.co.uk</a></div>
- 			-->          
+            <!--
+        <div><a href="#">www.dtechsystems.co.uk</a></div>
+            -->          
             <div> 
                 <?php
                 echo CHtml::mailto("contact@dtechsystems.co.uk");
                 ?>
             </div>
-           
+
             <div><a href="http://www.facebook.com/dtech.co">www.facebook.com/dtech.co</a></div>
-           	<!--
-            <div>
-            	<h6>UK Office:</h6>
-                <p>Leyton Business Centre. Unit 17,</p>
-                <p>Etloe Road, Leyton London E10 7BT</p>
-            </div>
-            <div>
-            	<h6>Pakistan Office:</h6>
-                <p>Office # 321, 602, Siddiq Trade Centre,</p>
-                <p>Gulberg 2, Lahore – Pakistan</p>
-            </div>
-            <div>
-            	<h6>Saudi Arabia Office:</h6>
-                <p>P.O. Box 22743, Riyadh 11416</p>
-                <p>Kingdom of Saudi Arabia</p>
-                <p>00966- 11- 4033962</p>
-            </div>
+            <!--
+        <div>
+            <h6>UK Office:</h6>
+            <p>Leyton Business Centre. Unit 17,</p>
+            <p>Etloe Road, Leyton London E10 7BT</p>
+        </div>
+        <div>
+            <h6>Pakistan Office:</h6>
+            <p>Office # 321, 602, Siddiq Trade Centre,</p>
+            <p>Gulberg 2, Lahore – Pakistan</p>
+        </div>
+        <div>
+            <h6>Saudi Arabia Office:</h6>
+            <p>P.O. Box 22743, Riyadh 11416</p>
+            <p>Kingdom of Saudi Arabia</p>
+            <p>00966- 11- 4033962</p>
+        </div>
             -->
             <div class="social_media_images">
                 <div class="tweet_hover">
@@ -135,7 +148,7 @@ if ($model->hasErrors()) {
                 </div>
             </div>
         </div>
-	</div>
+    </div>
 </div>
 
 <?php $this->endWidget(); ?>
@@ -147,3 +160,19 @@ if (!$model->hasErrors()) {
     ');
 }
 ?>
+<script type="text/javascript">
+            jQuery(document).ready(function() {
+                /*
+                 * snippet to clear the 
+                 * captcha value when 
+                 * validation failed..ubd
+                 */
+                jQuery("#ContactForm_verifyCode").val("");
+            })
+            window.onload = function() {
+                /*
+                 * code to change the captcha value on each page refresh after page load
+                 */
+                jQuery('#yw0_button').trigger('click');
+            }
+</script>

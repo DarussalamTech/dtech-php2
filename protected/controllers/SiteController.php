@@ -10,9 +10,8 @@ class SiteController extends Controller {
             // captcha action renders the CAPTCHA image displayed on the contact page
             'captcha' => array(
                 'class' => 'CCaptchaAction',
-                'backColor' => 0x000,
-                'foreColor' =>0xFFFFFF,
-                
+                'backColor' => 0x2F2F2F,
+                'foreColor' => 0xFFFFFF,
             ),
             // page action renders "static" pages stored under 'protected/views/site/pages'
             // They can be accessed via: index.php?r=site/page&view=FileName
@@ -34,6 +33,19 @@ class SiteController extends Controller {
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
             if ($model->validate()) {
+                if ($model->customer_copy_check == 1) {
+                    /*
+                     * module to send 
+                     * email copy to customer itself
+                     * if the button is checked
+                     */
+                    $email['To'] = $model->email;
+                    $email['From'] = Yii::app()->params['adminEmail'];
+                    $email['Subject'] = 'Contact Notification From ' . Yii::app()->name;
+                    $email['Body'] = $model->body;
+                    $email['Body'] = $this->renderPartial('/common/_email_template', array('email' => $email), true, false);
+                    $this->sendEmail2($email);
+                }
                 $contactM = new ContactFeedback;
                 $contactM->email = $model->email;
                 $contactM->name = $model->name;
@@ -75,29 +87,29 @@ class SiteController extends Controller {
                 $this->render('error', $error);
         }
     }
-
-    /**
-     * Displays the contact page
-     */
-    public function actionContact() {
-        $model = new ContactForm;
-        if (isset($_POST['ContactForm'])) {
-            $model->attributes = $_POST['ContactForm'];
-            if ($model->validate()) {
-                $name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
-                $subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
-                $headers = "From: $name <{$model->email}>\r\n" .
-                        "Reply-To: {$model->email}\r\n" .
-                        "MIME-Version: 1.0\r\n" .
-                        "Content-type: text/plain; charset=UTF-8";
-
-                mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
-                Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
-                $this->refresh();
-            }
-        }
-        $this->render('contact', array('model' => $model));
-    }
+//
+//    /**
+//     * Displays the contact page
+//     */
+//    public function actionContact() {
+//        $model = new ContactForm;
+//        if (isset($_POST['ContactForm'])) {
+//            $model->attributes = $_POST['ContactForm'];
+//            if ($model->validate()) {
+//                $name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
+//                $subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
+//                $headers = "From: $name <{$model->email}>\r\n" .
+//                        "Reply-To: {$model->email}\r\n" .
+//                        "MIME-Version: 1.0\r\n" .
+//                        "Content-type: text/plain; charset=UTF-8";
+//
+//                mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
+//                Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
+//                $this->refresh();
+//            }
+//        }
+//        $this->render('contact', array('model' => $model));
+//    }
 
     /**
      * Displays the login page

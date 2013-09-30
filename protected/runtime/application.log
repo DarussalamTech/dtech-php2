@@ -618,3 +618,747 @@ Stack trace:
 REQUEST_URI=/dtechsite/index.php/images/scroolaero.png
 HTTP_REFERER=http://localhost/dtechsite/index.php/
 ---
+2013/09/06 12:16:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'dtechsite'' in /var/www/yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /var/www/yii/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /var/www/yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(ConfMisc))
+#7 /var/www/dtech-php2/protected/models/ConfMisc.php(32): CActiveRecord::model('ConfMisc')
+#8 /var/www/dtech-php2/protected/components/Controller.php(66): ConfMisc::model()
+#9 /var/www/dtech-php2/protected/components/Controller.php(45): Controller->installConfig()
+#10 /var/www/yii/framework/web/CController.php(306): Controller->beforeAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /var/www/dtech-php2/index.php(12): CApplication->run()
+#17 {main}
+REQUEST_URI=/dtech-php2/
+---
+2013/09/06 12:17:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dtechsite.conf_misc' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `conf_misc`.
+in /var/www/dtech-php2/protected/models/ConfMisc.php (32)
+in /var/www/dtech-php2/protected/components/Controller.php (66)
+in /var/www/dtech-php2/protected/components/Controller.php (45)
+2013/09/06 12:17:47 [error] [exception.CDbException] exception 'CDbException' with message 'The table "conf_misc" for active record class "ConfMisc" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(ConfMisc))
+#1 /var/www/dtech-php2/protected/models/ConfMisc.php(32): CActiveRecord::model('ConfMisc')
+#2 /var/www/dtech-php2/protected/components/Controller.php(66): ConfMisc::model()
+#3 /var/www/dtech-php2/protected/components/Controller.php(45): Controller->installConfig()
+#4 /var/www/yii/framework/web/CController.php(306): Controller->beforeAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/dtech-php2/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/dtech-php2/
+---
+2013/09/06 14:53:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dtechsite.conf_misc' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `conf_misc`.
+in /var/www/dtech-php2/protected/models/ConfMisc.php (32)
+in /var/www/dtech-php2/protected/components/Controller.php (66)
+in /var/www/dtech-php2/protected/components/Controller.php (45)
+2013/09/06 14:53:11 [error] [exception.CDbException] exception 'CDbException' with message 'The table "conf_misc" for active record class "ConfMisc" cannot be found in the database.' in /var/www/yii/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(ConfMisc))
+#1 /var/www/dtech-php2/protected/models/ConfMisc.php(32): CActiveRecord::model('ConfMisc')
+#2 /var/www/dtech-php2/protected/components/Controller.php(66): ConfMisc::model()
+#3 /var/www/dtech-php2/protected/components/Controller.php(45): Controller->installConfig()
+#4 /var/www/yii/framework/web/CController.php(306): Controller->beforeAction(Object(CInlineAction))
+#5 /var/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 /var/www/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/dtech-php2/index.php(12): CApplication->run()
+#11 {main}
+REQUEST_URI=/dtech-php2/
+---
+2013/09/06 15:03:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dtechsite.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/09/06 15:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contacts".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('contacts')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('contacts')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacts')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/?r=site/contacts
+---
+2013/09/30 14:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.png".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.png')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/favicon.png
+---
+2013/09/30 15:02:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.png".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('favicon.png')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('favicon.png')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/favicon.pn...')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/favicon.png
+---
+2013/09/30 15:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contacts".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('contacts')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('contacts')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacts')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/contacts
+---
+2013/09/30 15:11:51 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "hasErrors".' in /var/www/dtech-php2/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/dtech-php2/protected/views/site/index.php(43): CComponent->__call('hasErrors', Array)
+#1 /var/www/dtech-php2/protected/views/site/index.php(43): CActiveForm->hasErrors()
+#2 /var/www/dtech-php2/yii/framework/web/CBaseController.php(126): require('/var/www/dtech-...')
+#3 /var/www/dtech-php2/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/dtech-...', Array, true)
+#4 /var/www/dtech-php2/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/dtech-...', Array, true)
+#5 /var/www/dtech-php2/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/dtech-php2/protected/controllers/SiteController.php(64): CController->render('index', Array)
+#7 /var/www/dtech-php2/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/dtech-php2/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/dtech-php2/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/dtech-php2/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site')
+#13 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/dtech-php2/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/dtech-php2/index.php/site/
+---
+2013/09/30 15:12:20 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "errorSummery".' in /var/www/dtech-php2/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /var/www/dtech-php2/protected/views/site/index.php(43): CComponent->__call('errorSummery', Array)
+#1 /var/www/dtech-php2/protected/views/site/index.php(43): CActiveForm->errorSummery()
+#2 /var/www/dtech-php2/yii/framework/web/CBaseController.php(126): require('/var/www/dtech-...')
+#3 /var/www/dtech-php2/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/dtech-...', Array, true)
+#4 /var/www/dtech-php2/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/dtech-...', Array, true)
+#5 /var/www/dtech-php2/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /var/www/dtech-php2/protected/controllers/SiteController.php(64): CController->render('index', Array)
+#7 /var/www/dtech-php2/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/dtech-php2/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/dtech-php2/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/dtech-php2/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site')
+#13 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/dtech-php2/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/dtech-php2/index.php/site/
+---
+2013/09/30 15:22:47 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.currentLang" is not defined.' in /var/www/dtech-php2/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/dtech-php2/protected/models/ContactForm.php(42): CComponent->__get('currentLang')
+#1 /var/www/dtech-php2/yii/framework/base/CModel.php(332): ContactForm->attributeLabels()
+#2 /var/www/dtech-php2/yii/framework/validators/CValidator.php(262): CModel->getAttributeLabel('name')
+#3 /var/www/dtech-php2/yii/framework/validators/CRequiredValidator.php(64): CValidator->addError(Object(ContactForm), 'name', '{attribute} can...')
+#4 /var/www/dtech-php2/yii/framework/validators/CValidator.php(213): CRequiredValidator->validateAttribute(Object(ContactForm), 'name')
+#5 /var/www/dtech-php2/yii/framework/base/CModel.php(159): CValidator->validate(Object(ContactForm), NULL)
+#6 /var/www/dtech-php2/protected/controllers/SiteController.php(36): CModel->validate()
+#7 /var/www/dtech-php2/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/dtech-php2/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/dtech-php2/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/dtech-php2/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('')
+#12 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site')
+#13 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/dtech-php2/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/dtech-php2/index.php/site/
+HTTP_REFERER=http://localhost/dtech-php2/index.php/site/
+---
+2013/09/30 16:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contacts".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('contacts')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('contacts')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contacts')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/contacts
+---
+2013/09/30 16:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contact".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('contact')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/contact
+---
+2013/09/30 16:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:13:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:17:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:18:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:18:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:21:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:21:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:22:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:23:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:39:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:39:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:40:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:40:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:41:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:43:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:44:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:48:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:48:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dfd".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('dfd')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('dfd')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/dfd')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/dfd
+---
+2013/09/30 16:48:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfdfdf".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dfdfdf')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/dfdfdf
+---
+2013/09/30 16:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfdfdf".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dfdfdf')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/dfdfdf
+---
+2013/09/30 16:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfdfdf".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dfdfdf')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/dfdfdf
+---
+2013/09/30 16:50:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfdfdf".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dfdfdf')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/dfdfdf
+---
+2013/09/30 16:50:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/admin
+---
+2013/09/30 16:51:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/user
+---
+2013/09/30 16:52:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfd".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dfd')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/dfd
+---
+2013/09/30 16:52:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sfdsdf".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('sfdsdf')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('sfdsdf')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sfdsdf')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/sfdsdf
+---
+2013/09/30 16:52:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sfdsdfsdf".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('sfdsdfsdf')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('sfdsdfsdf')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sfdsdfsdf')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/sfdsdfsdf
+---
+2013/09/30 16:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sfdsdfsdf".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('sfdsdfsdf')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('sfdsdfsdf')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sfdsdfsdf')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/sfdsdfsdf
+---
+2013/09/30 16:53:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sfdsdfsdf".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('sfdsdfsdf')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('sfdsdfsdf')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sfdsdfsdf')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/sfdsdfsdf
+---
+2013/09/30 16:54:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sfdsdfsdf".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('sfdsdfsdf')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('sfdsdfsdf')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sfdsdfsdf')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/sfdsdfsdf
+---
+2013/09/30 16:54:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sfdsdfsdf".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('sfdsdfsdf')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('sfdsdfsdf')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sfdsdfsdf')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/sfdsdfsdf
+---
+2013/09/30 16:54:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sfdsdfsdf".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('sfdsdfsdf')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('sfdsdfsdf')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sfdsdfsdf')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/sfdsdfsdf
+---
+2013/09/30 16:54:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sfdsdfsdf".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('sfdsdfsdf')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('sfdsdfsdf')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/sfdsdfsdf')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/sfdsdfsdf
+---
+2013/09/30 16:55:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfdf".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dfdf')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/dfdf
+---
+2013/09/30 17:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dfdfdf".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('dfdfdf')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/dfdfdf
+---
+2013/09/30 17:31:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sdfsdf".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sdfsdf')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/sdfsdf
+---
+2013/09/30 17:32:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sdfsdf".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sdfsdf')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/sdfsdf
+---
+2013/09/30 17:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ddf".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('ddf')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('ddf')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/ddf')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/ddf
+---
+2013/09/30 17:32:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('users')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('users')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/users
+---
+2013/09/30 17:32:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "user".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('user')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('user')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/user')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/site/user
+---
+2013/09/30 17:32:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/user
+---
+2013/09/30 17:32:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/dtech-php2/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/dtech-php2/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/dtech-php2/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/dtech-php2/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/dtech-php2/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/dtech-php2/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#9 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/dtech-php2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dtech-php2/index.php/users
+---
+2013/09/30 17:33:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/dtech-php2/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/dtech-php2/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/dtech-php2/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/dtech-php2/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/dtech-php2/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/dtech-php2/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#9 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/dtech-php2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dtech-php2/index.php/users
+---
+2013/09/30 17:33:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/user
+---
+2013/09/30 17:33:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/login
+---
+2013/09/30 17:33:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/dtech-php2/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/dtech-php2/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/dtech-php2/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/dtech-php2/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/dtech-php2/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/dtech-php2/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#9 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/dtech-php2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dtech-php2/index.php/users
+---
+2013/09/30 17:33:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /var/www/dtech-php2/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#1 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/dtech-php2/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dtech-php2/index.php/user
+---
+2013/09/30 17:33:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/dtech-php2/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/dtech-php2/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/dtech-php2/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/dtech-php2/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/dtech-php2/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/dtech-php2/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#9 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/dtech-php2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dtech-php2/index.php/users
+---
+2013/09/30 17:33:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/dtech-php2/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/dtech-php2/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/dtech-php2/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/dtech-php2/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/dtech-php2/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/dtech-php2/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/index')
+#9 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/dtech-php2/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/dtech-php2/index.php/users/index
+---
+2013/09/30 17:33:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.png".' in /var/www/dtech-php2/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/dtech-php2/yii/framework/web/CController.php(270): CController->missingAction('favicon.png')
+#1 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(282): CController->run('favicon.png')
+#2 /var/www/dtech-php2/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/favicon.p...')
+#3 /var/www/dtech-php2/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/dtech-php2/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/dtech-php2/index.php/users/favicon.png
+---

@@ -3,10 +3,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="en" />
-        
+
         <meta name="keywords" content="internet marketing,website development,web marketing,website services,islamic apps" />
         <meta name="description" content="DTech, DTech systems, Darussalam Tech" />
-        
+
         <script type="text/javascript" src="<?php echo Yii::app()->baseUrl ?>/packages/jui/js/jquery.js"></script>
         <!-- blueprint CSS framework -->
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/css/screen-override.css" media="screen, projection" />
@@ -79,8 +79,7 @@
                                     // array('label' => "Change Password", 'url' => array('/users/changepass'),'visible'=>(Yii::app()->user->isGuest)?0:1),
                                     //array('label' => (Yii::app()->user->theme == "Night" ? "Day" : "Night"), 'url' => array('/user/changeTheme')),
                                     array('label' => 'Change Password', 'url' => $this->createUrl('/users/changePassword'), 'visible' => (Yii::app()->user->isGuest) ? 0 : 1, 'itemOptions' => array('class' => '')),
-                                    array('label' => 'Configurations', 'url' => $this->createUrl('/configurations/load',array("m"=>"Misc")), 'visible' => (Yii::app()->user->isGuest) ? 0 : 1, 'itemOptions' => array('class' => '')),
-
+                                    array('label' => 'Configurations', 'url' => $this->createUrl('/configurations/load', array("m" => "Misc")), 'visible' => (Yii::app()->user->isGuest) ? 0 : 1, 'itemOptions' => array('class' => '')),
                                     array('label' => 'Logout', 'url' => array('/site/logout'), 'visible' => (Yii::app()->user->isGuest) ? 0 : 1, 'itemOptions' => array('class' => 'logout border-none')),
                                     array('label' => 'Login', 'url' => array('/site/login'), 'visible' => (Yii::app()->user->isGuest) ? 1 : 0, 'itemOptions' => array('class' => 'logout border-none')),
                                 ),
